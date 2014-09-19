@@ -12,3 +12,6 @@ var child_math = 5 * 5;
 var name = "Misko";
 console.log(name + " created the angular.js framework");
 ```
+```
+var x = [a,b,c];
+```
