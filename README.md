@@ -57,3 +57,8 @@ describe("A suite", function() {
   });
 });
 ```
+After downloading a particular version and unzipping, opening SpecRunner.html will run the included specs. You’ll note that both the source files and their respective specs are linked in the <head> of the SpecRunner.html. To start using Jasmine, replace the source/spec files with your own.
+
+##Suites: describe Your Tests
+A test suite begins with a call to the global Jasmine function describe with two parameters: a string and a function. The string is a name or title for a spec suite – usually what is being tested. The function is a block of code that implements the suite.
+
