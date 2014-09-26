@@ -22,7 +22,7 @@ JohnsDebt = JohnsDebt - 20;
 console.log(JohnsDebt);
 // → 100
 ```
-#Unidefined
+#Undefined
 var foo;//undefined
 
 #Environment
@@ -31,7 +31,7 @@ var foo;//undefined
 
 
 
-*addEventListener Basics*
+#addEventListener Basics
 
 addEventListener is the way to register an event listener as specified in W3C DOM. Its benefits are as follows:
 
