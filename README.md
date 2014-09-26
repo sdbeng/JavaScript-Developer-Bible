@@ -35,7 +35,12 @@ var hackx = 33;
 console.log("the value of hackx is", x);
 // → the value of hackx is 33
 ```
-
+##Return values
+```
+console.log(Math.min(2, 7) + 100);
+// → 102
+```
+##
 
 #addEventListener Basics
 
