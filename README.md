@@ -1,7 +1,7 @@
 ##JavaScript-Developer-Bible
 ==========================
 
-JavaScript Developer Bible
+JavaScript Developer Bible. Thank you to eloquentjs and foobar source for let me share this concepts.
 
 **A JavaScript program is a list of statements.**
 
