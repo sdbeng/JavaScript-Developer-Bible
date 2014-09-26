@@ -29,6 +29,7 @@ var foo; //undefined
 The collection of variables and their values that exist at a given time is called the environment. When a program starts up, this environment is not empty. It always contains variables that are part of the language standard, and most of the time, it has variables that provide ways to interact with the surrounding system. For example, in a browser, there are variables and functions to inspect and influence the currently loaded website and to read mouse and keyboard input.
 
 ##Console.log
+Though variable names cannot contain period characters, console.log clearly has one. This is because console.log isn’t a simple variable. It is actually an expression that retrieves the log property from the value held by the console variable.
 ```
 var hackx = 33;
 console.log("the value of hackx is", x);
