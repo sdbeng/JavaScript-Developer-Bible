@@ -15,6 +15,22 @@ console.log(name + " created the angular.js framework");
 ```
 var x = [a,b,c];
 ```
+#Variables basics
+```
+var JohnsDebt = 120;
+JohnsDebt = JohnsDebt - 20;
+console.log(JohnsDebt);
+// → 100
+```
+#Unidefined
+var foo;//undefined
+
+#Environment
+
+
+
+
+
 *addEventListener Basics*
 
 addEventListener is the way to register an event listener as specified in W3C DOM. Its benefits are as follows:
