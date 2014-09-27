@@ -40,6 +40,17 @@ console.log("the value of hackx is", x);
 console.log(Math.min(2, 7) + 100);
 // → 102
 ```
+##While Loops
+```
+var number = 0;
+while (number <= 12) {
+  console.log(number);
+  number = number + 2;
+}
+// → 0
+// → 2
+//   … etcetera
+```
 ##
 
 #addEventListener Basics
