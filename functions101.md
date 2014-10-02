@@ -46,3 +46,36 @@ console.log(x);
 // → inside f2
 ```
 This behavior helps prevent accidental interference between functions. If all variables were shared by the whole program, it’d take a lot of effort to make sure no name is ever used for two different purposes. And if you did reuse a variable name, you might see strange effects from unrelated code messing with the value of your variable. By treating function-local variables as existing only within the function, the language makes it possible to read and understand functions as small universes, without having to worry about all the code at once.
+
+##Nested scope
+
+JavaScript distinguishes not just between global and local variables. Functions can be created inside other functions, producing several degrees of locality.
+
+For example, this rather nonsensical function has two functions inside of it:
+```
+var landscape = function() {
+  var result = "";
+  var flat = function(size) {
+    for (var count = 0; count < size; count++)
+      result += "_";
+  };
+  var mountain = function(size) {
+    result += "/";
+    for (var count = 0; count < size; count++)
+      result += "'";
+    result += "\\";
+  };
+
+  flat(3);
+  mountain(4);
+  flat(6);
+  mountain(1);
+  flat(1);
+  return result;
+};
+
+console.log(landscape());
+// → ___/''''\______/'\_
+
+```
+##
