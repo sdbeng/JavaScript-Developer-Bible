@@ -106,4 +106,32 @@ Specs are defined by calling the global Jasmine function it, which, like describ
 ##It's just functions
 Since describe and it blocks are functions, they can contain any executable code necessary to implement the test. JavaScript scoping rules apply, so variables declared in a describe are available to any it block inside the suite.
 
-More updates soon.
+##Hoisting problem
+Have you ever noticed how some things appear to be in scope even though their definition appears later in the file? The colloquial term for this is hoisting:
+```
+function example() {
+  console.log(a);
+  var a = 1;
+}
+
+example();
+```
+Running this will log undefined rather than 1.
+
+##Confusing Closures
+
+The following example defines three functions and assigns them as methods to an object. Each method is then called after the loop has finished.
+```
+function example() {
+  var o = {}, i = 0;
+  for (i = 0; i < 3; i++) {
+    o[i] = function() { console.log(i); };
+  }
+  o[0]();
+  o[1]();
+  o[2]();
+}
+
+example();
+```
+The output will be 3 each time, because the closure is bound to the function scope, not the (non-existent) block scope. Intermediate JavaScript programmers often make this mistake.
