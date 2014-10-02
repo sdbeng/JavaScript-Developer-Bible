@@ -19,4 +19,6 @@ console.log(power(2, 10));
 ```
 Tips:The return keyword without an expression after it will cause the function to return undefined.
 
-##bar
+##Parameters and scopes
+
+The parameters to a function behave like regular variables, but their initial values are given by the caller of the function, not the code in the function itself.
